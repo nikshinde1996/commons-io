@@ -124,6 +124,7 @@ public class FileAlterationObserver implements Serializable {
     private static final long serialVersionUID = 1185122225658782848L;
     private final List<FileAlterationListener> listeners = new CopyOnWriteArrayList<>();
     private final FileEntry rootEntry;
+    // The filefilter can be null.
     private final FileFilter fileFilter;
     private final Comparator<File> comparator;
 
