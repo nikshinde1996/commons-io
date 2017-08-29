@@ -23,7 +23,7 @@ import java.io.File;
  * interfaces via the IOFileFilter interface.
  * <p>
  * Note that a subclass <b>must</b> override one of the accept methods,
- * otherwise your class will infinitely loop.
+ * otherwise your class will infinitely loop leading to StackOverflowError.
  *
  * @since 1.0
  * @version $Id$
