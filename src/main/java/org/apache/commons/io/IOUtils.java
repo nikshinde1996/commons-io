@@ -1146,7 +1146,7 @@ public class IOUtils {
      * Gets the contents at the given URI.
      *
      * @param uri The URI source.
-     * @param encoding The encoding name for the URL contents.
+     * @param encoding The encoding name for the URL contents, null means platform default.
      * @return The contents of the URL as a String.
      * @throws IOException if an I/O exception occurs.
      * @since 2.3.
@@ -1159,7 +1159,7 @@ public class IOUtils {
      * Gets the contents at the given URI.
      *
      * @param uri The URI source.
-     * @param encoding The encoding name for the URL contents.
+     * @param encoding The encoding name for the URL contents, null means platform default.
      * @return The contents of the URL as a String.
      * @throws IOException                                  if an I/O exception occurs.
      * @throws java.nio.charset.UnsupportedCharsetException thrown instead of {@link java.io
@@ -1189,7 +1189,7 @@ public class IOUtils {
      * Gets the contents at the given URL.
      *
      * @param url The URL source.
-     * @param encoding The encoding name for the URL contents.
+     * @param encoding The encoding name for the URL contents, null means platform default.
      * @return The contents of the URL as a String.
      * @throws IOException if an I/O exception occurs.
      * @since 2.3
@@ -1204,7 +1204,7 @@ public class IOUtils {
      * Gets the contents at the given URL.
      *
      * @param url The URL source.
-     * @param encoding The encoding name for the URL contents.
+     * @param encoding The encoding name for the URL contents, null means platform default.
      * @return The contents of the URL as a String.
      * @throws IOException                                  if an I/O exception occurs.
      * @throws java.nio.charset.UnsupportedCharsetException thrown instead of {@link java.io
