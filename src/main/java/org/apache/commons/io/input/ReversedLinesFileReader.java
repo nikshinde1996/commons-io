@@ -179,7 +179,7 @@ public class ReversedLinesFileReader implements Closeable {
             if (currentFilePart != null) {
                 line = currentFilePart.readLine();
             } else {
-                // no more fileparts: we're done, leave line set to null
+                // no more fileparts: we're done, leave line and currentFilePart set to null
                 break;
             }
         }
@@ -216,7 +216,7 @@ public class ReversedLinesFileReader implements Closeable {
          * ctor
          * @param no the part number
          * @param length its length
-         * @param leftOverOfLastFilePart remainder
+         * @param leftOverOfLastFilePart remainder, may be null
          * @throws IOException if there is a problem reading the file
          */
         private FilePart(final long no, final int length, final byte[] leftOverOfLastFilePart) throws IOException {
