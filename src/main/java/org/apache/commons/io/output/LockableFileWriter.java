@@ -257,7 +257,7 @@ public class LockableFileWriter extends Writer {
      * Ensure that a cleanup occurs if the writer creation fails.
      *
      * @param file  the file to be accessed
-     * @param encoding  the encoding to use
+     * @param encoding  the encoding to use, may be null
      * @param append  true to append
      * @return The initialised writer
      * @throws IOException if an error occurs
